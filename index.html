@@ -10,26 +10,36 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="shortcut icon" href="assets/n.svg" />
+    <script>
+      function include(file, external = false) {
+        file = !external ? '/scripts/' + file : file
+        let script = document.createElement('script')
+        script.src = file
+        script.type = 'text/javascript'
+        script.defer = true
+        document.getElementsByTagName('head').item(0).appendChild(script)
+      }
+    </script>
     <script src="scripts/index.js"></script>
   </head>
   <body>
     <div id="app" class="h-100 root_wrapper">
-        <ul class="gallery">
-            <li class="nav-links"><a href="/splitted_login.html">Login</a></li>
-            <li class="nav-links"><a href=""></a></li>
-            <li class="nav-links"><a href=""></a></li>
-            <li class="nav-links"><a href=""></a></li>
-            <li class="nav-links"><a href=""></a></li>
-            <li class="nav-links"><a href=""></a></li>
-            <li class="nav-links"><a href=""></a></li>
-            <li class="nav-links"><a href=""></a></li>
-        </ul>
-        <div class="flex-center h-100">
-            <h1 class="gradient-text">Coming Soon!</h1>
-        </div>
+      <ul class="gallery">
+        <li class="nav-links"><a href="/splitted_login.html">Login</a></li>
+        <li class="nav-links"><a href=""></a></li>
+        <li class="nav-links"><a href=""></a></li>
+        <li class="nav-links"><a href=""></a></li>
+        <li class="nav-links"><a href=""></a></li>
+        <li class="nav-links"><a href=""></a></li>
+        <li class="nav-links"><a href=""></a></li>
+        <li class="nav-links"><a href=""></a></li>
+      </ul>
+      <div class="flex-center h-100">
+        <h1 class="gradient-text">Coming Soon!</h1>
+      </div>
     </div>
   </body>
 </html>
