@@ -1,0 +1,12 @@
+.gallery {
+  list-style: none;
+  .nav-links a:not(:empty) {
+    font-size: 1.2em;
+    font-weight: 400;
+    width: 200px;
+    height: 125px;
+    border: 1px solid #25cce9;
+    padding: .3em .5em;
+  }
+}
+
